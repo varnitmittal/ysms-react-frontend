@@ -1,0 +1,364 @@
+@import './assets/css/reset.css';
+@import './assets/css/variables.css';
+@import './assets/css/base.css';
+@import './assets/css/basic.css';
+
+.header-button {
+  background: transparent;
+  color: var(--blue);
+}
+.header-button:hover {
+  background-color: var(--blue);
+  color: var(--white);
+}
+.menuitems li {
+  color: var(--black);
+}
+.menuitems li img {
+  filter: grayscale(80%);
+  opacity: 0.5;
+}
+.menuitems li:hover a,
+.menuitems li.active a {
+  color: var(--blue);
+  font-weight: bold;
+}
+.menuitems li:hover a img,
+.menuitems li.active a img {
+  filter: grayscale(0%);
+  opacity: 1;
+}
+
+.tile {
+  position: relative;
+}
+
+.tile::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  width: 5px;
+  height: 45%;
+  border-radius: 20px;
+  align-items: center;
+  display: flex;
+}
+.calenderTile.tile::before {
+  width: 3px;
+  height: 65%;
+}
+.tile1,
+.admissionTile2 {
+  background-color: var(--light-green);
+}
+.tile1::before,
+.admissionTile2::before {
+  background-color: var(--green);
+}
+.tile2,
+.admissionTile1 {
+  background-color: var(--light-blue2);
+}
+.tile2::before,
+.admissionTile1::before {
+  background-color: var(--blue2);
+}
+.tile3,
+.admissionTile4 {
+  background-color: var(--light-purple);
+}
+.tile3::before,
+.admissionTile4::before {
+  background-color: var(--purple);
+}
+.admissionTile3 {
+  background-color: var(--light-red);
+}
+.admissionTile3::before {
+  background-color: var(--red);
+}
+.tile-button,
+.admissionTile2-button {
+  background-color: var(--green);
+  color: var(--white);
+}
+.admissionTile1-button {
+  background-color: var(--blue2);
+  color: var(--white);
+}
+.admissionTile3-button {
+  background-color: var(--red);
+  color: var(--white);
+}
+.admissionTile4-button {
+  background-color: var(--purple);
+  color: var(--white);
+}
+
+.custom-calendar .pf-screen-reader,
+.custom-calendar .pf-c-select__toggle-arrow {
+  display: none;
+}
+.custom-calendar .pf-c-select {
+  margin-left: 3rem;
+  width: 95px !important;
+}
+.custom-calendar .pf-c-calendar-month__header {
+  display: flex;
+  justify-content: center;
+}
+.custom-calendar .pf-c-calendar-month__header,
+.custom-calendar .pf-c-calendar-month__header-year input {
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+}
+.custom-calendar .pf-c-calendar-month__day {
+  font-size: 1.4rem;
+}
+.custom-calendar .pf-c-calendar-month__header-month {
+  flex-grow: unset;
+}
+.custom-calendar .pf-c-select__menu {
+  background-color: var(--black);
+  color: var(--white);
+  z-index: 1;
+}
+
+.custom-calendar .pf-m-selected button {
+  background-color: var(--red);
+  color: var(--white);
+  border-radius: 20px;
+}
+.react-tabs__tab-list {
+  display: inline-flex;
+  width: auto;
+  cursor: pointer;
+}
+.attendencetabs .react-tabs__tab-list {
+  padding: 5px;
+  font-size: 1.6rem;
+  border-radius: 10px;
+  border: 1px solid var(--grey);
+}
+.attendencetabs .react-tabs__tab {
+  padding: 1rem;
+}
+.attendencetabs .react-tabs__tab,
+.setupSchoolTabs .react-tabs__tab {
+  color: var(--light-blue);
+  font-weight: bold;
+}
+
+.attendencetabs .react-tabs__tab.react-tabs__tab--selected {
+  background-color: var(--grey);
+  color: var(--blue);
+  border-radius: 10px;
+}
+.setupSchoolTabs .react-tabs__tab {
+  margin: 0 2rem;
+  padding: 2rem 0;
+}
+
+.setupSchoolTabs .react-tabs__tab-list {
+  background-color: var(--white);
+  width: 100%;
+  margin-top: 3rem;
+  font-size: 1.8rem;
+  border-radius: 2rem;
+  padding-left: 1rem;
+}
+
+.setupSchoolTabs .react-tabs__tab.react-tabs__tab--selected {
+  color: var(--blue);
+  color: var(--blue);
+  border-bottom: 3px solid var(--red);
+}
+.setupSchoolTabs .react-tabs__tab-panel.react-tabs__tab-panel--selected {
+  background-color: var(--white);
+  border-radius: 2rem;
+  min-height: 50rem;
+  margin-top: 3rem;
+}
+.MuiInput-underline:before,
+.MuiInput-underline:after {
+  border-bottom-width: 0 !important;
+}
+.custom-choose-select {
+  width: 160px;
+  cursor: pointer;
+}
+.search-input.MuiFormControl-root,
+.custom-choose-select.MuiInputBase-root {
+  background-color: var(--grey);
+  border-radius: 2rem;
+  padding: 0.5rem 1.5rem;
+  border: 1px solid var(--grey2);
+  height: 42px;
+}
+.custom-white-input.search-input.MuiFormControl-root,
+.custom-white-select.custom-choose-select.MuiInputBase-root {
+  background-color: var(--white);
+}
+.custom-grey-input.search-input.MuiFormControl-root,
+.custom-grey-select.custom-choose-select.MuiInputBase-root,
+.custom-grey-input {
+  background-color: var(--grey3);
+}
+.border-input-none.search-input.MuiFormControl-root,
+.border-input-none.custom-choose-select.MuiInputBase-root,
+.border-input-none {
+  border-width: 0;
+}
+.search-input .MuiSvgIcon-root {
+  font-size: 2rem;
+  color: var(--grey2);
+}
+.search-input .MuiInputBase-input {
+  font-size: 1.7rem;
+  background: transparent;
+  outline: none;
+  color: #999999;
+
+  border: 0px !important;
+  outline: none !important;
+  /* background: 'transparent !important'; */
+  align-content: center;
+  box-shadow: inset 0px 0px 0px 0px red;
+  text-shadow: none !important;
+}
+.biginput.search-input .MuiInputBase-input {
+  width: 29rem;
+}
+.custom-choose-select .MuiSelect-select.MuiSelect-select {
+  background-color: transparent;
+  font-size: 1.6rem;
+  color: var(--light-blue);
+  min-height: 0;
+}
+.custom-choose-select .MuiSvgIcon-root {
+  font-size: 2.5rem;
+  color: var(--grey2);
+}
+.custom-select .MuiSelect-select.MuiSelect-select,
+#menu-userrole .MuiMenuItem-root {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: var(--blue);
+  background-color: transparent;
+}
+.MuiMenuItem-root {
+  font-size: 1.6rem !important;
+}
+.ddArrow.MuiSvgIcon-root {
+  width: 2em;
+  height: 2em;
+  color: var(--blue);
+  margin-top: -1em;
+}
+.yogshem-menu-icon.MuiSvgIcon-root {
+  font-size: 30px;
+  color: var(--blue);
+}
+.newSetupBtn {
+  background-color: var(--blue);
+  color: var(--white);
+}
+.editBtn {
+  color: var(--blue);
+  background-color: var(--light-blue2);
+}
+.AcceptBtn {
+  color: var(--green);
+  background-color: var(--light-green);
+}
+.AcceptBtn:hover {
+  background-color: var(--green);
+  color: var(--white);
+}
+.deleteBtn {
+  background-color: var(--light-red);
+  color: var(--red);
+}
+.deleteBtn:hover {
+  background-color: var(--red);
+  color: var(--white);
+}
+.addclass {
+  background-color: var(--grey2);
+}
+.editBtn:hover,
+.addclass:hover {
+  background-color: var(--blue);
+  color: var(--white);
+}
+thead,
+tbody tr {
+  display: table;
+  width: 100%;
+  table-layout: fixed;
+}
+.subject-input + .subject-label .activeSubject,
+.subject-input:checked + .subject-label .notActiveSubject {
+  display: none;
+}
+.subject-input:checked + .subject-label .activeSubject,
+.subject-input + .subject-label .notActiveSubject {
+  display: inline-flex;
+}
+.checkbox-label .MuiFormControlLabel-labelPlacementStart {
+  margin: 0;
+}
+.checkbox-label .MuiSvgIcon-root {
+  width: 5rem;
+  height: 5rem;
+}
+.checkbox-label .MuiFormControlLabel-label {
+  font-size: 2.2rem;
+  font-weight: bold;
+}
+.studentRequestbg {
+  margin-top: 3rem;
+}
+.studentRequestbg,
+.studentAdmissionbg {
+  background-color: var(--white);
+  border-radius: 2rem;
+  min-height: 50rem;
+}
+.studentRegistrationbg {
+  background-color: var(--white);
+  border-radius: 2rem;
+}
+.setupclasspopup .MuiTypography-body1 {
+  font-size: 1.35rem;
+}
+@media only screen and (max-width: 1400px) {
+  html,
+  body {
+    font-size: 9px !important;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  #yogsham-nav-panel {
+    position: absolute;
+    z-index: 1;
+    left: -300px;
+    transition: 2s;
+  }
+  #yogsham-nav-panel.show-yogsham-nav-panel {
+    left: 0;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+}
+
+/*  New Customer */
+/* .new-customer .MuiButton-endIcon {
+  margin-left: 60px !important;
+}
+.new-customer button {
+  color: var(--blue) !important;
+} */

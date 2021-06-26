@@ -1,0 +1,476 @@
+.font-family-SF {
+  font-family: 'SF UI Display Regular';
+}
+.main-scroll-height {
+  height: calc(100vh - 13rem);
+}
+.hand-cursor {
+  cursor: pointer;
+}
+.bg-white {
+  background-color: var(--white);
+}
+.bg-blue {
+  background-color: var(--blue);
+}
+.bg-grey {
+  background-color: var(--grey);
+}
+.bg-light-blue2 {
+  background-color: var(--light-blue2);
+}
+.bg-grey2 {
+  background-color: var(--grey2);
+}
+.bg-grey3 {
+  background-color: var(--grey3);
+}
+.blackcolor {
+  color: var(--black);
+}
+.redcolor {
+  color: var(--red);
+}
+.bluecolor {
+  color: var(--blue);
+}
+.lightBluecolor {
+  color: var(--light-blue);
+}
+.whitecolor {
+  color: var(--white);
+}
+.grey2color {
+  color: var(--grey2);
+}
+.text-left {
+  text-align: left;
+}
+.text-center {
+  text-align: center;
+}
+.flex1 {
+  flex: 1;
+}
+.flex2 {
+  flex: 2;
+}
+.flex-column {
+  flex-direction: column;
+}
+.mlr-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
+.mr-8 {
+  margin-right: 0.8rem;
+}
+.mr-15 {
+  margin-right: 1.5rem;
+}
+.mr-20 {
+  margin-right: 2rem;
+}
+.mr-50 {
+  margin-right: 5rem;
+}
+.mt-5 {
+  margin-top: 0.5rem;
+}
+button:disabled {
+  pointer-events: none;
+}
+button {
+  font-size: 1.6rem;
+}
+.mt-10 {
+  margin-top: 1rem;
+}
+.m-auto {
+  margin: auto;
+}
+.mt-20 {
+  margin-top: 2rem;
+}
+.mt-50 {
+  margin-top: 5rem;
+}
+.mt-n7 {
+  margin-top: -7px;
+}
+.mb-10 {
+  margin-bottom: 1rem;
+}
+.mb-20 {
+  margin-bottom: 2rem;
+}
+.mb-30 {
+  margin-bottom: 3rem;
+}
+.mb-50 {
+  margin-bottom: 5rem;
+}
+.ml-8 {
+  margin-left: 0.8rem;
+}
+.ml-15 {
+  margin-left: 1.5rem;
+}
+.ml-30 {
+  margin-left: 3rem;
+}
+.ml-50 {
+  margin-left: 5rem;
+}
+.d-inline-block {
+  display: inline-block;
+}
+.d-flex {
+  display: flex;
+}
+.d-none {
+  display: none;
+}
+.d-block {
+  display: block;
+}
+.d-inline-flex {
+  display: inline-flex;
+}
+
+.align-items-center {
+  align-items: center;
+}
+
+.justify-space-between {
+  justify-content: space-between;
+}
+.justify-center {
+  justify-content: center;
+}
+.justify-flex-end {
+  justify-content: flex-end;
+}
+.p-5 {
+  padding: 5px;
+}
+.p-10 {
+  padding: 1rem;
+}
+.p-15 {
+  padding: 1.5rem;
+}
+.p-20 {
+  padding: 2rem;
+}
+.p-30 {
+  padding: 3rem;
+}
+.pbt-100 {
+  padding-top: 10rem;
+  padding-bottom: 10rem;
+}
+.pt-5 {
+  padding-top: 0.5rem;
+}
+.pt-10 {
+  padding-top: 1rem;
+}
+.pt-20 {
+  padding-top: 2rem;
+}
+.pt-40 {
+  padding-top: 4rem;
+}
+.pb-0 {
+  padding-bottom: 0;
+}
+.pb-10 {
+  padding-bottom: 1rem;
+}
+.pb-20 {
+  padding-bottom: 2rem;
+}
+.pb-30 {
+  padding-bottom: 3rem;
+}
+.pb-40 {
+  padding-bottom: 4rem;
+}
+.pl-20 {
+  padding-left: 2rem;
+}
+.pl-30 {
+  padding-left: 3rem;
+}
+.pl-50 {
+  padding-left: 5rem;
+}
+.pr-20 {
+  padding-right: 2rem;
+}
+.pr-50 {
+  padding-right: 5rem;
+}
+.h-17 {
+  height: 1.7rem;
+}
+.h-20 {
+  height: 2rem;
+}
+.h-21 {
+  height: 2.1rem;
+}
+.h-35 {
+  height: 3.5rem;
+}
+.h-42 {
+  height: 4.2rem;
+}
+.h-50 {
+  height: 5rem;
+}
+.h-57 {
+  height: 5.7rem;
+}
+.h-80 {
+  height: 8rem;
+}
+.h-130 {
+  height: 13rem;
+}
+.maxh-280 {
+  max-height: 28rem;
+}
+.maxh-400 {
+  max-height: 40rem;
+}
+.maxh-500 {
+  max-height: 50rem;
+}
+.maxh-80vh {
+  max-height: 80vh;
+}
+.w-80per {
+  width: 80%;
+}
+.w-100per {
+  width: 100%;
+}
+.w-20 {
+  width: 2rem;
+}
+.w-45 {
+  width: 4.5rem;
+}
+.w-9 {
+  width: 9rem;
+}
+.w-14 {
+  width: 14rem;
+}
+.w-177 {
+  width: 17.7rem;
+}
+.w-400 {
+  width: 40rem;
+}
+.w-700 {
+  width: 70rem;
+}
+.mw-100per {
+  min-width: 100%;
+}
+.mw-240 {
+  min-width: 24rem;
+}
+.mw-287 {
+  min-width: 28.7rem;
+}
+.mw-90 {
+  min-width: 9rem;
+}
+.mw-500 {
+  min-width: 50rem;
+}
+.mw-510 {
+  min-width: 51rem;
+}
+.mw-1070 {
+  min-width: 107rem;
+}
+.maxw-1070 {
+  max-width: 107rem;
+}
+.overflow-hidden {
+  overflow: hidden;
+}
+.overflow-x-hidden {
+  overflow-x: hidden;
+}
+.overflow-y-auto {
+  overflow-y: auto;
+}
+.position-relative {
+  position: relative;
+}
+.text-nowrap {
+  white-space: nowrap;
+}
+.outline-none {
+  outline: none;
+}
+.border-0 {
+  border-width: 0;
+}
+.border-dashed-blue {
+  border: 2px dashed var(--blue);
+}
+.border-top-grey {
+  border-top: 1px solid var(--grey);
+}
+.border-top-grey2 {
+  border-top: 1px solid var(--grey2);
+}
+.border-bottom-grey {
+  border-bottom: 1px solid var(--grey);
+}
+.border-bottom-grey2 {
+  border-bottom: 1px solid var(--grey2);
+}
+.border-grey {
+  border: 1px solid var(--grey);
+}
+.border-grey2 {
+  border: 1px solid var(--grey2);
+}
+.border-grey3 {
+  border: 1px solid var(--grey3);
+}
+.border-blue {
+  border: 1px solid var(--blue);
+}
+.border-black-double {
+  border: 2px solid var(--black);
+}
+.bs-border-box {
+  box-sizing: border-box;
+}
+.br-50per {
+  border-radius: 50%;
+}
+
+.br-20 {
+  border-radius: 2rem;
+}
+.br-10 {
+  border-radius: 1rem;
+}
+.font-style-normal {
+  font-style: normal;
+}
+.font-weight-bold {
+  font-weight: bold;
+}
+.fs-30 {
+  font-size: 3rem;
+}
+.fs-20 {
+  font-size: 2rem;
+}
+.fs-22 {
+  font-size: 2.2rem;
+}
+svg.MuiSvgIcon-root.fs-25 {
+  font-size: 2.5rem;
+}
+.fs-18 {
+  font-size: 1.8rem;
+}
+svg.MuiSvgIcon-root.fs-16,
+.fs-16 {
+  font-size: 1.6rem;
+}
+.fs-14 {
+  font-size: 1.4rem;
+}
+
+.lh-17 {
+  line-height: 1.7rem;
+}
+
+.lh-21 {
+  line-height: 2.1rem;
+}
+.hide-on-desktop {
+  display: none;
+}
+.flex-wrap {
+  flex-wrap: wrap;
+}
+@media only screen and (max-width: 1200px) {
+  .flex-wrap-md {
+    flex-wrap: wrap;
+  }
+  .mr-0-md {
+    margin-right: 0 !important;
+  }
+  .flex-auto-md {
+    flex: auto !important;
+  }
+  .justify-space-around-xs {
+    justify-content: space-around !important;
+  }
+  .w-100per-md {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  .flex-wrap-sm {
+    flex-wrap: wrap;
+  }
+  .hide-on-desktop {
+    display: flex;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .flex-wrap-xs {
+    flex-wrap: wrap;
+  }
+  .mr-0-xs {
+    margin-right: 0 !important;
+  }
+  .flex-auto-xs {
+    flex: auto !important;
+  }
+  .justify-space-around-xs {
+    justify-content: space-around !important;
+  }
+  .w-100per-xs {
+    width: 100% !important;
+  }
+}
+
+.new-customer-setup-classes svg {
+  font-size: 2.5rem;
+}
+
+.fileuploadimage {
+  height: auto;
+  width: 100px;
+  padding-top: 7px;
+  margin: 0 auto;
+}
+
+.unChecked {
+  pointer-events: none;
+  opacity: 0.5;
+}
+
+.new-customer-setup-classes label span {
+  font-size: 1.7rem;
+}
+.MuiAlert-action .MuiSvgIcon-fontSizeSmall {
+  font-size: 20px;
+}

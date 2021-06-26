@@ -1,0 +1,930 @@
+/* @import './assets/css/reset.css'; */
+/* @import './assets/css/variables.css'; */
+/* @import './assets/css/base.css'; */
+/* @import './assets/css/basic.css'; */
+@font-face {
+  font-family: 'SF UI Display Regular';
+  src: url('./assets/fonts/SF-UI-Display-Regular/762c72a2791c9d3eadc7e3b6b935aa69.eot'); /* IE9*/
+  src: url('./assets/fonts/SF-UI-Display-Regular/762c72a2791c9d3eadc7e3b6b935aa69.eot?#iefix')
+      format('embedded-opentype'),
+    /* IE6-IE8 */
+      url('./assets/fonts/SF-UI-Display-Regular/762c72a2791c9d3eadc7e3b6b935aa69.woff2')
+      format('woff2'),
+    /* chrome、firefox */
+      url('./assets/fonts/SF-UI-Display-Regular/762c72a2791c9d3eadc7e3b6b935aa69.woff')
+      format('woff'),
+    /* chrome、firefox */
+      url('./assets/fonts/SF-UI-Display-Regular/762c72a2791c9d3eadc7e3b6b935aa69.ttf')
+      format('truetype'),
+    /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+      url('./assets/fonts/SF-UI-Display-Regular/762c72a2791c9d3eadc7e3b6b935aa69.svg#SF UI Display Regular')
+      format('svg'); /* iOS 4.1- */
+}
+body {
+  margin: 0;
+  font-family: 'SF UI Display Regular', -apple-system, BlinkMacSystemFont,
+    'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans',
+    'Droid Sans', 'Helvetica Neue', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  box-sizing: border-box;
+  background-color: var(--grey);
+}
+
+@media only screen and (max-width: 1400px) {
+  html,
+  body {
+    font-size: 9px !important;
+  }
+}
+
+.capitalize {
+  text-transform: capitalize;
+}
+.cursor-pointer {
+  cursor: pointer;
+}
+.text-center {
+  text-align: center;
+}
+.text-lg {
+  /* font-size: 1.8em; */
+  /* line-height: 2.8em; */
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+}
+.text-base {
+  font-size: 1.6em;
+  line-height: 2.4em;
+}
+.text-sm {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+.text-xl {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+}
+.text-4xl {
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+}
+.text-2xl {
+  font-size: 2.4em;
+  line-height: 3.2em;
+}
+.fill-current {
+  fill: currentColor;
+}
+.inline-block {
+  display: inline-block;
+}
+.block {
+  display: block;
+}
+.overflow-x-hidden {
+  overflow-x: hidden;
+}
+.overflow-hidden {
+  overflow: hidden;
+}
+.rounded-2xl {
+  border-radius: 1.6em;
+}
+.rounded-full {
+  border-radius: 999.9em;
+}
+.rounded-lg {
+  border-radius: 0.5rem;
+}
+.border-2 {
+  border-width: 0.125em;
+}
+.border {
+  border-width: 0.1em;
+}
+.mx-4 {
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+.mx-14 {
+  margin-left: 3.5rem;
+  margin-right: 3.5rem;
+}
+.my-24 {
+  margin-top: 6rem;
+  margin-bottom: 6rem;
+}
+.my-20 {
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+}
+.my-12 {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+.mt-12 {
+  margin-top: 3rem;
+}
+.mt-10 {
+  margin-top: 2.5rem;
+}
+.mt-3 {
+  margin-top: 0.75rem;
+}
+.mt-5 {
+  margin-top: 1.25rem;
+}
+.mt-14 {
+  margin-top: 3.5rem;
+}
+.ml-10 {
+  margin-left: 2.5rem;
+}
+.mr-10 {
+  margin-right: 2.5rem;
+}
+.mr-8 {
+  margin-right: 0.8rem;
+}
+.mr-15 {
+  margin-right: 1.5rem;
+}
+.mr-20 {
+  margin-right: 2rem;
+}
+.mr-50 {
+  margin-right: 5rem;
+}
+.mt-5 {
+  margin-top: 0.5rem;
+}
+.ml-4 {
+  margin-left: 1rem;
+}
+.ml-24 {
+  margin-left: 6rem;
+}
+.mb-24 {
+  margin-bottom: 6rem;
+}
+.mb-4 {
+  margin-bottom: 1rem;
+}
+.mb-10 {
+  margin-bottom: 1rem;
+}
+.mb-20 {
+  margin-bottom: 2rem;
+}
+.mb-30 {
+  margin-bottom: 3rem;
+}
+.mb-50 {
+  margin-bottom: 5rem;
+}
+.mr-4 {
+  margin-right: 1rem;
+}
+.mt-8 {
+  margin-top: 2rem;
+}
+.ml-9 {
+  margin-left: 2.25rem;
+}
+.mt-20 {
+  margin-top: 5rem;
+}
+.-ml-5 {
+  margin-left: -1.25rem;
+}
+.mt-2 {
+  margin-top: 0.5rem;
+}
+.mt-24 {
+  margin-top: 6rem;
+}
+.mt-7 {
+  margin-top: 1.75rem;
+}
+.mt-4 {
+  margin-top: 1rem;
+}
+.mr-14 {
+  margin-right: 3.5rem;
+}
+.ml-5 {
+  margin-left: 1.25rem;
+}
+.mt-1 {
+  margin-top: 0.25rem;
+}
+.ml-14 {
+  margin-left: 3.5rem;
+}
+.ml-3 {
+  margin-left: 0.75rem;
+}
+.mt-6 {
+  margin-top: 1.5rem;
+}
+.mt-16 {
+  margin-top: 4rem;
+}
+.ml-12 {
+  margin-left: 3rem;
+}
+.ml-7 {
+  margin-left: 1.75rem;
+}
+.ml-20 {
+  margin-left: 5rem;
+}
+.p-12 {
+  padding: 3rem;
+}
+.p-8 {
+  padding: 2rem;
+}
+.p-10 {
+  padding: 2.5rem;
+}
+.py-3 {
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+}
+.px-48 {
+  padding-left: 12rem;
+  padding-right: 12rem;
+}
+.py-4 {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+.px-7 {
+  padding-left: 1.75rem;
+  padding-right: 1.75rem;
+}
+.py-2 {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+.px-4 {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+.px-14 {
+  padding-left: 3.5rem;
+  padding-right: 3.5rem;
+}
+.py-20 {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+.pl-14 {
+  padding-left: 3.5rem;
+}
+.pt-20 {
+  padding-top: 5rem;
+}
+.relative {
+  position: relative;
+}
+.absolute {
+  position: absolute;
+}
+.left-0 {
+  left: 0px;
+}
+.top-0 {
+  top: 0px;
+}
+.bottom-0 {
+  bottom: 0px;
+}
+.right-0 {
+  right: 0px;
+}
+.-right-28 {
+  right: -7rem;
+}
+.top-32 {
+  top: 8rem;
+}
+.-right-40 {
+  right: -10rem;
+}
+.fs-18 {
+  font-size: 1.8rem;
+}
+.grid {
+  display: grid;
+}
+.gap-x-16 {
+  -moz-column-gap: 4rem;
+  column-gap: 4rem;
+}
+.grid-cols-3 {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+.d-flex {
+  display: flex;
+}
+.d-none {
+  display: none;
+}
+.d-block {
+  display: block;
+}
+.flex-auto-xs {
+  flex: auto !important;
+}
+.flex-column {
+  flex-direction: column;
+}
+.flex-col {
+  flex-direction: column;
+}
+.h-full {
+  height: 100%;
+}
+.w-full {
+  width: 100%;
+}
+.object-cover {
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+.object-contain {
+  -o-object-fit: contain;
+  object-fit: contain;
+}
+.h-4 {
+  height: 1rem;
+}
+.text-white {
+  color: rgba(255, 255, 255, 1);
+}
+.font-bold {
+  font-weight: 700;
+}
+.font-semibold {
+  font-weight: 600;
+}
+.font-normal {
+  font-weight: 400;
+}
+.font-extrabold {
+  font-weight: 800;
+}
+.font-medium {
+  font-weight: 500;
+}
+.max-w-lg {
+  max-width: 32rem;
+}
+.max-w-xl {
+  max-width: 36rem;
+}
+.max-w-2xl {
+  max-width: 42rem;
+}
+.leading-8 {
+  line-height: 2rem;
+}
+.h-60 {
+  height: 15rem;
+}
+.bg-white {
+  background-color: var(--white);
+}
+.bg-blue {
+  background-color: var(--blue);
+}
+.bg-grey {
+  background-color: var(--grey);
+}
+.bg-light-blue2 {
+  background-color: var(--light-blue2);
+}
+.bg-grey2 {
+  background-color: var(--grey2);
+}
+.bg-grey3 {
+  background-color: var(--grey3);
+}
+.blackcolor {
+  color: var(--black);
+}
+.redcolor {
+  color: var(--red);
+}
+.bluecolor {
+  color: var(--blue);
+}
+.lightBluecolor {
+  color: var(--light-blue);
+}
+.whitecolor {
+  color: var(--white);
+}
+.grey2color {
+  color: var(--grey2);
+}
+.justify-space-between {
+  justify-content: space-between;
+}
+.justify-center {
+  justify-content: center;
+}
+.justify-flex-end {
+  justify-content: flex-end;
+}
+.br-20 {
+  border-radius: 2rem;
+}
+.br-10 {
+  border-radius: 1rem;
+}
+.p-5 {
+  padding: 5px;
+}
+.p-10 {
+  padding: 1rem;
+}
+.p-15 {
+  padding: 1.5rem;
+}
+.p-20 {
+  padding: 2rem;
+}
+.p-30 {
+  padding: 3rem;
+}
+.pb-0 {
+  padding-bottom: 0;
+}
+.pb-10 {
+  padding-bottom: 1rem;
+}
+.pb-20 {
+  padding-bottom: 2rem;
+}
+.pb-30 {
+  padding-bottom: 3rem;
+}
+.pb-40 {
+  padding-bottom: 4rem;
+}
+.w-100per {
+  width: 100%;
+}
+.w-100per-xs {
+  width: 100% !important;
+}
+.h-17 {
+  height: 1.7rem;
+}
+.h-20 {
+  height: 2rem;
+}
+.h-21 {
+  height: 2.1rem;
+}
+.h-35 {
+  height: 3.5rem;
+}
+.h-42 {
+  height: 4.2rem;
+}
+.h-50 {
+  height: 5rem;
+}
+.h-57 {
+  height: 5.7rem;
+}
+.h-80 {
+  height: 8rem;
+}
+.h-130 {
+  height: 13rem;
+}
+.fs-14 {
+  font-size: 1.4rem;
+}
+.fs-16 {
+  font-size: 1.6rem;
+}
+/* .flex-wrap-md {
+  flex-wrap: wrap;
+} */
+.flex1 {
+  flex: 1;
+}
+.flex {
+  display: flex;
+}
+.flex2 {
+  flex: 2;
+}
+.font-style-normal {
+  font-style: normal;
+}
+.font-weight-bold {
+  font-weight: bold;
+}
+.flex-between {
+  display: flex;
+  justify-content: space-between;
+}
+.flex-betweenColoum {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.items-center {
+  align-items: center;
+}
+.items-start {
+  align-items: flex-start;
+}
+.items-end {
+  align-items: flex-end;
+}
+.justify-center {
+  justify-content: center;
+}
+.justify-between {
+  justify-content: space-between;
+}
+.justify-around {
+  justify-content: space-around;
+}
+.justify-start {
+  justify-content: flex-start;
+}
+.justify-end {
+  justify-content: flex-end;
+}
+
+.header-button {
+  background: transparent;
+  color: var(--blue);
+}
+.header-button:hover {
+  background-color: var(--blue);
+  color: var(--white);
+}
+.menuitems li {
+  color: var(--black);
+}
+.menuitems li img {
+  filter: grayscale(80%);
+  opacity: 0.5;
+}
+.menuitems li:hover a,
+.menuitems li.active a {
+  color: var(--blue);
+  font-weight: bold;
+}
+.menuitems li:hover a img,
+.menuitems li.active a img {
+  filter: grayscale(0%);
+  opacity: 1;
+}
+
+.tile {
+  position: relative;
+}
+
+.tile::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  width: 5px;
+  height: 45%;
+  border-radius: 20px;
+  align-items: center;
+  display: flex;
+}
+.calenderTile.tile::before {
+  width: 3px;
+  height: 65%;
+}
+.tile1,
+.admissionTile2 {
+  background-color: var(--light-green);
+}
+.tile1::before,
+.admissionTile2::before {
+  background-color: var(--green);
+}
+.tile2,
+.admissionTile1 {
+  background-color: var(--light-blue2);
+}
+.tile2::before,
+.admissionTile1::before {
+  background-color: var(--blue2);
+}
+.tile3,
+.admissionTile4 {
+  background-color: var(--light-purple);
+}
+.tile3::before,
+.admissionTile4::before {
+  background-color: var(--purple);
+}
+.admissionTile3 {
+  background-color: var(--light-red);
+}
+.admissionTile3::before {
+  background-color: var(--red);
+}
+.tile-button,
+.admissionTile2-button {
+  background-color: var(--green);
+  color: var(--white);
+}
+.admissionTile1-button {
+  background-color: var(--blue2);
+  color: var(--white);
+}
+.admissionTile3-button {
+  background-color: var(--red);
+  color: var(--white);
+}
+.admissionTile4-button {
+  background-color: var(--purple);
+  color: var(--white);
+}
+
+.custom-calendar .pf-screen-reader,
+.custom-calendar .pf-c-select__toggle-arrow {
+  display: none;
+}
+.custom-calendar .pf-c-select {
+  margin-left: 3rem;
+  width: 95px !important;
+}
+.custom-calendar .pf-c-calendar-month__header {
+  display: flex;
+  justify-content: center;
+}
+.custom-calendar .pf-c-calendar-month__header,
+.custom-calendar .pf-c-calendar-month__header-year input {
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+}
+.custom-calendar .pf-c-calendar-month__day {
+  font-size: 1.4rem;
+}
+.custom-calendar .pf-c-calendar-month__header-month {
+  flex-grow: unset;
+}
+.custom-calendar .pf-c-select__menu {
+  background-color: var(--black);
+  color: var(--white);
+  z-index: 1;
+}
+
+.custom-calendar .pf-m-selected button {
+  background-color: var(--red);
+  color: var(--white);
+  border-radius: 20px;
+}
+.react-tabs__tab-list {
+  display: inline-flex;
+  width: auto;
+  cursor: pointer;
+}
+.attendencetabs .react-tabs__tab-list {
+  padding: 5px;
+  font-size: 1.6rem;
+  border-radius: 10px;
+  border: 1px solid var(--grey);
+}
+.attendencetabs .react-tabs__tab {
+  padding: 1rem;
+}
+.attendencetabs .react-tabs__tab,
+.setupSchoolTabs .react-tabs__tab {
+  color: var(--light-blue);
+  font-weight: bold;
+}
+
+.attendencetabs .react-tabs__tab.react-tabs__tab--selected {
+  background-color: var(--grey);
+  color: var(--blue);
+  border-radius: 10px;
+}
+.setupSchoolTabs .react-tabs__tab {
+  margin: 0 2rem;
+  padding: 2rem 0;
+}
+
+.setupSchoolTabs .react-tabs__tab-list {
+  background-color: var(--white);
+  width: 100%;
+  margin-top: 3rem;
+  font-size: 1.8rem;
+  border-radius: 2rem;
+  padding-left: 1rem;
+}
+
+.setupSchoolTabs .react-tabs__tab.react-tabs__tab--selected {
+  color: var(--blue);
+  color: var(--blue);
+  border-bottom: 3px solid var(--red);
+}
+.setupSchoolTabs .react-tabs__tab-panel.react-tabs__tab-panel--selected {
+  background-color: var(--white);
+  border-radius: 2rem;
+  min-height: 50rem;
+  margin-top: 3rem;
+}
+.MuiInput-underline:before,
+.MuiInput-underline:after {
+  border-bottom-width: 0 !important;
+}
+.custom-choose-select {
+  width: 160px;
+  cursor: pointer;
+}
+.search-input.MuiFormControl-root,
+.custom-choose-select.MuiInputBase-root {
+  background-color: var(--grey);
+  border-radius: 2rem;
+  padding: 0.5rem 1.5rem;
+  border: 1px solid var(--grey2);
+  height: 42px;
+}
+.custom-white-input.search-input.MuiFormControl-root,
+.custom-white-select.custom-choose-select.MuiInputBase-root {
+  background-color: var(--white);
+}
+.custom-grey-input.search-input.MuiFormControl-root,
+.custom-grey-select.custom-choose-select.MuiInputBase-root,
+.custom-grey-input {
+  background-color: var(--grey3);
+}
+.border-input-none.search-input.MuiFormControl-root,
+.border-input-none.custom-choose-select.MuiInputBase-root,
+.border-input-none {
+  border-width: 0;
+}
+.search-input .MuiSvgIcon-root {
+  font-size: 2rem;
+  color: var(--grey2);
+}
+.search-input .MuiInputBase-input {
+  font-size: 1.7rem;
+  background: transparent;
+  outline:none;
+  color: #999999;
+
+
+  border: 0px !important;
+  outline: none !important;
+  /* background: 'transparent !important'; */
+  align-content: center;
+  box-shadow: inset 0px 0px 0px 0px red;
+  text-shadow: none !important;
+
+}
+.biginput.search-input .MuiInputBase-input {
+  width: 29rem;
+}
+.custom-choose-select .MuiSelect-select.MuiSelect-select {
+  background-color: transparent;
+  font-size: 1.6rem;
+  color: var(--light-blue);
+  min-height: 0;
+}
+.custom-choose-select .MuiSvgIcon-root {
+  font-size: 2.5rem;
+  color: var(--grey2);
+}
+.custom-select .MuiSelect-select.MuiSelect-select,
+#menu-userrole .MuiMenuItem-root {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: var(--blue);
+  background-color: transparent;
+}
+.MuiMenuItem-root {
+  font-size: 1.6rem !important;
+}
+.ddArrow.MuiSvgIcon-root {
+  width: 2em;
+  height: 2em;
+  color: var(--blue);
+  margin-top: -1em;
+}
+.yogshem-menu-icon.MuiSvgIcon-root {
+  font-size: 30px;
+  color: var(--blue);
+}
+.newSetupBtn {
+  background-color: var(--blue);
+  color: var(--white);
+}
+.editBtn {
+  color: var(--blue);
+  background-color: var(--light-blue2);
+}
+.AcceptBtn {
+  color: var(--green);
+  background-color: var(--light-green);
+}
+.AcceptBtn:hover {
+  background-color: var(--green);
+  color: var(--white);
+}
+.deleteBtn {
+  background-color: var(--light-red);
+  color: var(--red);
+}
+.deleteBtn:hover {
+  background-color: var(--red);
+  color: var(--white);
+}
+.addclass {
+  background-color: var(--grey2);
+}
+.editBtn:hover,
+.addclass:hover {
+  background-color: var(--blue);
+  color: var(--white);
+}
+thead,
+tbody tr {
+  display: table;
+  width: 100%;
+  table-layout: fixed;
+}
+.subject-input + .subject-label .activeSubject,
+.subject-input:checked + .subject-label .notActiveSubject {
+  display: none;
+}
+.subject-input:checked + .subject-label .activeSubject,
+.subject-input + .subject-label .notActiveSubject {
+  display: inline-flex;
+}
+.checkbox-label .MuiFormControlLabel-labelPlacementStart {
+  margin: 0;
+}
+.checkbox-label .MuiSvgIcon-root {
+  width: 5rem;
+  height: 5rem;
+}
+.checkbox-label .MuiFormControlLabel-label {
+  font-size: 2.2rem;
+  font-weight: bold;
+}
+.studentRequestbg {
+  margin-top: 3rem;
+}
+.studentRequestbg,
+.studentAdmissionbg {
+  background-color: var(--white);
+  border-radius: 2rem;
+  min-height: 50rem;
+}
+.studentRegistrationbg {
+  background-color: var(--white);
+  border-radius: 2rem;
+}
+.setupclasspopup .MuiTypography-body1 {
+  font-size: 1.35rem;
+}
+@media only screen and (max-width: 1400px) {
+  html,
+  body {
+    font-size: 9px !important;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  #yogsham-nav-panel {
+    position: absolute;
+    z-index: 1;
+    left: -300px;
+    transition: 2s;
+  }
+  #yogsham-nav-panel.show-yogsham-nav-panel {
+    left: 0;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+}
+
+/*  New Customer */
+.new-customer .MuiButton-endIcon {
+  margin-left: 60px !important;
+}
+.new-customer button {
+  color: var(--blue) !important;
+}
